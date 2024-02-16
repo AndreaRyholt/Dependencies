@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns: th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>alcohol</title>
 </head>
 <body>
-$END$
+    <div th:each="people : ${list}">
+        <span th:text ="${people.name} + '' + ${people.age}"/>
+    </div>
 </body>
 </html>

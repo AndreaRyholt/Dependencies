@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns: th="https://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>friday</title>
 </head>
 <body>
-$END$
+<td>
+<span th:if="${day == 'friday'}">It is Friday!</span>
+<span th:unless="${day == 'friday'}">It is not Friday</span>
+</td>
 </body>
 </html>
